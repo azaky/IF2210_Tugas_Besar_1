@@ -19,8 +19,10 @@ void add(type elmt);
 void del(type* elmt);
 void delBack(type* elmt);
 
+bool isEmpty();
 int getSize();
 void print();
+type front();
 };
 
 template <class type>
@@ -78,6 +80,10 @@ void Queue <type>::delBack(type* elmt){
 	}
 }
 template <class type>
+bool Queue <type>::isEmpty(){
+	return back==0;
+}
+template <class type>
 int Queue <type>::getSize(){
 	return size;
 }
@@ -89,6 +95,10 @@ void Queue <type>::print(){
 	}
 	cout<<endl;
 }
-
+template <class type>
+type Queue <type>::front(){
+	if(!isEmpty())
+		return tabElmt[0];
+}
 
 #endif

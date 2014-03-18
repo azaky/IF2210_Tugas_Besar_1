@@ -1,5 +1,3 @@
-/* Halo Zaky ;) */
-
 #include <iostream>
 #include <cstdlib>
 #include "BankQueue.h"
