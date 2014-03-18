@@ -10,6 +10,9 @@
 class BankQueue {
 public:
 	//5 sekawan + ctorparam
+	/**
+	 * Konstruktor
+	 */
 	BankQueue();
 	BankQueue(const BankQueue&);
 	BankQueue(int);
