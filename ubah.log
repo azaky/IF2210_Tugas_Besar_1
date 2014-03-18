@@ -1,0 +1,5 @@
+class Date:
+- menambah fungsi isValid(int,int,int)->int
+
+class BankQueue:
+- menambah int id
