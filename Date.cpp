@@ -72,7 +72,12 @@ int Date::getTahun() {
 	return tahun;
 }
 void Date::setTahun(int tahun) {
-	this->tahun = tahun;
+	if (!isValid(tanggal, bulan, tahun)) {
+		//error! out of bounds
+	}
+	else {
+		this->tahun = tahun;
+	}
 }
 
 //operator 
